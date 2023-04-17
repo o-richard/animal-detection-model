@@ -18,8 +18,7 @@ A similar implementation is in Kaggle ([Animal Detection Model](https://www.kagg
 ## Project Outline
 The repository contains several folders and files:
 * .vscode - Contains Vistual Studio Code settings.
-* screenshots - Contains several screenshots for the program.
-* complete_animal-detection-model - COntains the architecture, weights, and optimizer state.
+* screenshots - Contains several screenshots for the program. (For the complete animal detection model containing the architecture, weights, and optimizer state, you can find it in the output section of the [notebook in Kaggle](https://www.kaggle.com/code/richardodhiambo/animal-detection-model))
 * model.ipynb - Contains a Jupyter Notebook showing my implementation of the model.
 * weights_animal_detection_model.h5 - Contains the weights of the model.
 
