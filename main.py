@@ -1,5 +1,6 @@
 import os
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -130,10 +131,10 @@ loss_df = pd.DataFrame(
     index=epochs_range,
 )
 # Plot Accuracy
-# acc_df.plot()
+acc_df.plot()
 
 # Plot Loss
-# loss_df.plot()
+loss_df.plot()
 
 # Testing the Model
 test_labels = test_batches.classes
@@ -147,7 +148,16 @@ for i in range(len(test_labels)):
         acc += 1
 print("Accuarcy:", (acc / len(test_labels)) * 100, "%")
 
+# Visulize test results
+values = [acc, len(test_labels) - acc]
+labels = ['Correct', 'Incorrect']
+
+fig, ax = plt.subplots()
+ax.pie(values, labels=labels, autopct='%1.1f%%')
+ax.set_title('Percentage of correct and incorrect predictions')
+plt.show()
+
 # Save the entire model (architecture, weights, and optimizer state)
-model.save("animal_detection_model")
+# model.save("animal_detection_model")
 # Save only the weights of the model
 model.save_weights("animal_detection_model_weights.h5")

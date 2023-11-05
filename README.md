@@ -1,6 +1,18 @@
 # Animal detection model
 > A model to automatically identify and classify animals in images. It is trained on the Animals Detection Images Dataset from [Kaggle](https://www.kaggle.com/datasets/antoreepjana/animals-detection-images-dataset). **It relies on the pre-trained weights of EfficientNet B7.**
 
+## Results on Kaggle
+The notebook on Kaggle can be viewed on [https://www.kaggle.com/code/richardodhiambo/animal-detection-model](https://www.kaggle.com/code/richardodhiambo/animal-detection-model)
+
+![Accuracy Curve](screenshots/accuracy-curve.jpg)
+![Loss Curve](screenshots/loss-curve.jpg)
+![Performance on the Test Set](screenshots/test-predictions.jpg)
+
+## Dependencies versions
+1. Tensorflow - 2.14.0
+2. Numpy - 1.23.5
+3. Pandas - 1.5.3
+
 ## Impelemntation
 
 Transfer learning from pre-trained weights of **EfficientNet B7**
